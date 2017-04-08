@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="noServerApp">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="./dist/styles.css">
+    <title>Avid Golfer</title>
   </head>
   <body>
+    <header class='box-header' >
+      <nav>
+        <ul>
+          <h2><a class="nav-link" ui-sref="home">Home</a></h2>
+          <h2><a class="nav-link" ui-sref="courses">Courses</a></h2>
+          <h2><a class="nav-link" ui-sref="weather">Weather</a></h2>
+          <h2><a class="nav-link" ui-sref="schedule">Schedule</a></h2>
+        </ul>
+      </nav>
+    </header>
+
+  <ui-view></ui-view>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
     <script src="dist/js/bundle.js"></script>
   </body>
 </html>
