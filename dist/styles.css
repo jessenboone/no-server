@@ -6,15 +6,27 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   font-size: 35px;
-  border: 5px; }
+  border: 45px;
+  color: white; }
   .courses-wrapper .course-image {
-    margin-top: 55px;
-    padding-bottom: 15px;
-    width: 500px;
-    height: 225vh; }
+    margin-left: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 35px;
+    border-color: white;
+    width: 525px;
+    height: 300px; }
+
+.course-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 55px; }
 
 .home-wrapper {
   background: url("/img/Sand hollow.jpg");
@@ -51,7 +63,11 @@
   width: 100%;
   position: absolute;
   background-color: transparent;
-  color: #f2f2f2; }
+  color: #f2f2f2;
+  font-weight: bold;
+  font-family: verdana, sans-serif;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+  text-align: center; }
   .box-header ul {
     display: flex;
     justify-content: space-around;
@@ -108,7 +124,7 @@ table {
   border-spacing: 0; }
 
 .schedule-wrapper {
-  background: url("/img/golf ball.jpg");
+  background: url("/img/golf ball123.jpg");
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   height: 100vh;
@@ -169,16 +185,33 @@ table {
     color: white !important; }
 
 .weather-body {
-  width: 100%;
+  background: url("/img/rain golf.jpg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
   height: 100vh;
+  width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: flex-start; }
   .weather-body input {
-    height: 15px;
-    width: 20px; }
+    height: 27px;
+    width: 160px;
+    margin-top: 150px;
+    margin-left: 50px;
+    padding-right: 10px; }
   .weather-body button {
-    height: 55px;
-    width: 60px; }
+    height: 34px;
+    width: 75px;
+    margin-top: 150px;
+    margin-left: 2px; }
+  .weather-body .body {
+    display: flex;
+    justify-content: flex-start;
+    width: 5%;
+    height: 10%; }
+  .weather-body .data-style {
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 1; }
 
 /*# sourceMappingURL=maps/styles.css.map */

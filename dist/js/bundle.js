@@ -36,9 +36,9 @@ angular.module('noServerApp').controller('coursesCtrl', function ($scope, course
 angular.module('noServerApp').service('coursesService', function () {
 
   var courses = [{
-    course: 'Pebble Beach',
-    location: 'Pebble Beach, CA',
-    image: 'img/pebble beach.jpg'
+    course: 'Glenmoor',
+    location: 'Canton, OH',
+    image: 'img/Glenmoor.jpg'
   }, {
     course: 'Augusta National',
     location: 'Augusta, GA',
@@ -48,9 +48,17 @@ angular.module('noServerApp').service('coursesService', function () {
     location: 'Palm Desert, CA',
     image: 'img/delfino course.jpg'
   }, {
+    course: 'Pebble Beach',
+    location: 'Pebble Beach, CA',
+    image: 'img/pebble beach.jpg'
+  }, {
+    course: 'Bethpage',
+    location: 'Farmingdale, NY',
+    image: 'img/fairway.jpg'
+  }, {
     course: 'Brunswick',
     location: 'Brunswick, ME',
-    image: 'img/fairway.jpg'
+    image: 'img/water golf.jpg'
   }];
 
   this.getCourses = function () {

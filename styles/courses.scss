@@ -5,20 +5,34 @@
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
   font-size: 35px;
-  border: 5px;
-
+  border: 45px;
+  color: white;
 
 
 .course-image {
-margin-top: 55px;
-padding-bottom: 15px;
 
-  width: 500px;
-  height: 225vh;
+margin-left: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 35px;
+border-color: white;
+
+
+  width: 525px;
+  height: 300px;
   }
 
+}
+
+.course-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 55px;
 }

@@ -1,10 +1,16 @@
 <div class="weather-body">
   <div class="body">
 
-<input type="text" ng-model="city" />
+<input type="text" ng-model="city" placeholder=" Please enter City or State" />
 
 <button type="button" name="button" ng-click="getWeather(city)">Submit</button>
+<div class="data-style">
 
+{{weather.data.city.name}}
+{{weather.data.list[0].main}}
+<!-- {{weather.data.city}}
+{{weather.data.city}} -->
+
+    </div>
   </div>
 </div>
-{{weather.data.city.name}}

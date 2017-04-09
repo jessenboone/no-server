@@ -2,7 +2,10 @@
 
   <div ng-repeat="course in courses">
     <img class="course-image"ng-src="{{course.image}}">
-    {{course.course}}
-    {{course.location}}
+    <div class="course-text">
+
+      {{course.course}}
+      {{course.location}}
+    </div>
   </div>
 </div>

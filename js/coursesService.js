@@ -2,9 +2,9 @@ angular.module('noServerApp')
 .service('coursesService', function() {
 
   var courses = [{
-    course: 'Pebble Beach' ,
-    location: 'Pebble Beach, CA',
-    image: 'img/pebble beach.jpg'
+    course: 'Glenmoor',
+    location: 'Canton, OH',
+    image: 'img/Glenmoor.jpg'
   },
   {
     course: 'Augusta National',
@@ -17,9 +17,19 @@ angular.module('noServerApp')
     image: 'img/delfino course.jpg'
   },
   {
+    course: 'Pebble Beach' ,
+    location: 'Pebble Beach, CA',
+    image: 'img/pebble beach.jpg'
+  },
+  {
+    course: 'Bethpage',
+    location: 'Farmingdale, NY',
+    image: 'img/fairway.jpg'
+  },
+  {
     course: 'Brunswick',
     location: 'Brunswick, ME',
-    image: 'img/fairway.jpg'
+    image: 'img/water golf.jpg'
   }]
 
 
