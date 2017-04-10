@@ -1,16 +1,86 @@
 <div class="weather-body">
   <div class="body">
 
-<input type="text" ng-model="city" placeholder=" Please enter City or State" />
-
-<button type="button" name="button" ng-click="getWeather(city)">Submit</button>
-<div class="data-style">
-
-{{weather.data.city.name}}
-{{weather.data.list[0].main}}
-<!-- {{weather.data.city}}
-{{weather.data.city}} -->
-
+  <div class="weather">
+    <div class="absolute">
+      <input type="text" ng-model="city" placeholder=" Please enter City or State" />
+      <button type="button" name="button" ng-click="getWeather(city)">Submit</button>
     </div>
+    <div class="data-style" ng-show="flag">
+    <h2>
+      <div class="">
+        City
+      </div>
+      <div class="weather-data">
+      {{weather.data.city.name}}
+      </div>
+    </h2>
+      <div class="">
+        <h2>
+          Forecast
+      </h2>
+
+      <div>
+        <h2>
+        <img ng-src="{{'http://openweathermap.org/img/w/' + weather.data.list[0].weather[0].icon + '.png'}}" class="img-class">
+        </h2>
+        <h2>
+      {{weather.data.list[0].weather[0].description}}
+      </h2>
+      </div>
+    </div>
+    <h2>
+      <div class="">
+        Temp-min
+      </div>
+      <div class="">
+        {{lowF}}°
+      </div>
+    </h2>
+    <h2>
+      <div class="">
+        Temp-max
+      </div>
+      <div class="">
+        {{highF}}°
+      </div>
+    </h2>
+    <h2>
+      <div class="">
+        Wind
+      </div>
+      <div class="">
+        {{weather.data.list[0].wind.speed}} mph
+      </div>
+    </h2>
+    <h2>
+      <div class="">
+        Humidity
+      </div>
+      <div class="">
+        {{weather.data.list[0].main.humidity}}%
+      </div>
+    </h2>
+  </div>
+
+
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+<div>
+
+</div>
+<div>
+
+</div>
+
+
+
+
   </div>
 </div>

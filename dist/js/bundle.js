@@ -36,27 +36,27 @@ angular.module('noServerApp').controller('coursesCtrl', function ($scope, course
 angular.module('noServerApp').service('coursesService', function () {
 
   var courses = [{
-    course: 'Glenmoor',
+    course: '"Glenmoor"',
     location: 'Canton, OH',
     image: 'img/Glenmoor.jpg'
   }, {
-    course: 'Augusta National',
+    course: '"Augusta National"',
     location: 'Augusta, GA',
     image: 'img/augusta glass.jpg'
   }, {
-    course: 'Delfino Resort',
+    course: '"Delfino Resort"',
     location: 'Palm Desert, CA',
     image: 'img/delfino course.jpg'
   }, {
-    course: 'Pebble Beach',
+    course: '"Pebble Beach"',
     location: 'Pebble Beach, CA',
     image: 'img/pebble beach.jpg'
   }, {
-    course: 'Bethpage',
+    course: '"Bethpage"',
     location: 'Farmingdale, NY',
     image: 'img/fairway.jpg'
   }, {
-    course: 'Brunswick',
+    course: '"Brunswick"',
     location: 'Brunswick, ME',
     image: 'img/water golf.jpg'
   }];
@@ -86,11 +86,19 @@ angular.module('noServerApp').service('scheduleService', function () {});
 'use strict';
 
 angular.module('noServerApp').controller('weatherCtrl', function ($scope, weatherService) {
+
+  $scope.flag = false;
+
   $scope.getWeather = function (city) {
     console.log('response');
     weatherService.getWeather(city).then(function (res) {
+      $scope.flag = true;
       $scope.weather = res;
       console.log(res);
+      var low = res.data.list[0].main.temp_min;
+      $scope.lowF = Math.round(low * 9 / 5 - 459.67);
+      var high = res.data.list[0].main.temp_max;
+      $scope.highF = Math.round(high * 9 / 5 - 459.67);
     });
   };
 });
